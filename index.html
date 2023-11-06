@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <header class="d-flex justify-content-center">
+      <h1>Weather Dashboard</h1>
+    </header>
+    <!-- Form for getting the city name from user -->
+    <main class="d-flex flex-row justify-content-between">
+      <div class="col-3 city-container">
+        <form class="city-form">
+          <label for="city-search" class="city-search">
+            <h2>Search for a City:</h2>
+          </label>
+          <p class="alert hide" id="alert">Please enter a valid city</p>
+          <input class="w-100" type="text" id="city-search" name="city-search" placeholder="Please enter city name">
+          <button class="search-btn w-100" id="search-btn">Search</button>
+        </form>
+        <br>
+        <div class="city-history" id="city-history">
+        </div>
+      </div>
+      
+     <!-- Showing current weather conditions -->
+      <div class="hide col-9 results-container" id="results-container">
+        <div class="info-container flex-row w-100" id="info-container">
+          <h3 class="city-name d-flex align-items-center">
+            <span id="city-name"></span>
+            <img id="icon-img" src="" alt="">
+          </h3>
+          <p class="weather-details">Temp: <span id="temp"></span>°F</p>
+          <p class="weather-details">Wind: <span id="wind"></span> MPH</p>
+          <p class="weather-details">Humidity: <span id="humidity"></span>%</p>
+        </div>
+       <!-- Showing 5 days forecast -->
+        <div class="forecast-container flex-row w-100">
+          <h4 class="forecast-header">5-Day Forecast</h4>
+
+          <div class="future-forecast d-flex justify-content-between" id="forecast-row">
+            <div class="forecast-box col-2">
+              <h5 class="future-header">
+                <span id="future-date"></span>
+                <img id="future-icon" src="" alt="">
+              </h5>
+              <p class="weather-details">Temp: <span id="temp">Temp</span>°F</p>
+              <p class="weather-details">Wind: <span id="wind"></span> MPH</p>
+              <p class="weather-details">Humidity: <span id="humidity"></span>%</p>
+            </div>
+
+            <div class="forecast-box col-2">
+              <h5 class="future-header">
+                <span id="future-date"></span>
+                <img id="future-icon" src="" alt="">
+              </h5>
+              <p class="weather-details">Temp: <span id="temp">Temp</span>°F</p>
+              <p class="weather-details">Wind: <span id="wind"></span> MPH</p>
+              <p class="weather-details">Humidity: <span id="humidity"></span>%</p>
+            </div>
+
+            <div class="forecast-box col-2">
+              <h5 class="future-header">
+                <span id="future-date"></span>
+                <img id="future-icon" src="" alt="">
+              </h5>
+              <p class="weather-details">Temp: <span id="temp">Temp</span>°F</p>
+              <p class="weather-details">Wind: <span id="wind"></span> MPH</p>
+              <p class="weather-details">Humidity: <span id="humidity"></span>%</p>
+            </div>
+
+            <div class="forecast-box col-2">
+              <h5 class="future-header">
+                <span id="future-date"></span>
+                <img id="future-icon" src="" alt="">
+              </h5>
+              <p class="weather-details">Temp: <span id="temp">Temp</span>°F</p>
+              <p class="weather-details">Wind: <span id="wind"></span> MPH</p>
+              <p class="weather-details">Humidity: <span id="humidity"></span>%</p>
+            </div>
+
+            <div class="forecast-box col-2">
+              <h5 class="future-header">
+                <span id="future-date"></span>
+                <img id="future-icon" src="" alt="">
+              </h5>
+              <p class="weather-details">Temp: <span id="temp">Temp</span>°F</p>
+              <p class="weather-details">Wind: <span id="wind"></span> MPH</p>
+              <p class="weather-details">Humidity: <span id="humidity"></span>%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/script.js"></script>
+</html>
