@@ -15,7 +15,7 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 # Link to deployed website 
-https://hadiqaaziz.github.io/weather_dashboard/
+(https://hadiqaaziz.github.io/5-days-weather-forecast/)
 # Screenshot of website
 <img width="958" alt="image" src="https://github.com/HadiqaAziz/5-days-weather-forecast/assets/2726317/99a7d3eb-5386-43b9-8958-6f680628a5fc">
 
