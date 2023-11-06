@@ -16,3 +16,6 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 # Link to deployed website 
 https://hadiqaaziz.github.io/weather_dashboard/
+# Screenshot of website
+<img width="958" alt="image" src="https://github.com/HadiqaAziz/5-days-weather-forecast/assets/2726317/99a7d3eb-5386-43b9-8958-6f680628a5fc">
+
